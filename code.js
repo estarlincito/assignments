@@ -43,24 +43,24 @@ function sent(){
         presidente.value == ""){
         alert("Complete todos los campos");
     }else{
-        const url = `https://wa.me/18096562791?text=${encodeURIComponent(`
-        *Asignaciones Miércoles & Sábado*
-        Semana: ${data.semana}
-        - Acomodador_1: ${data.acomodador_1}
-        - Acomodador_2: ${data.acomodador_2}
-        - Multimedia_1: ${data.multimedia_1}
-        - Multimedia_2: ${data.multimedia_2}
-        - Microfono: ${data.microfono}
-        - Plataforma: ${data.plataforma}
-        - Lector_L: ${data.lector_l}
-        - Lector_A: ${data.lector_a}
-        - Oracion_P: ${data.oracion_p}
-        - Oracion_F: ${data.oracion_f}
-        - Presidente: ${data.presidente}`
+        const url = `https://wa.me/send?text=${encodeURIComponent(`
+        *Asignaciones Miércoles & Sábado*\n
+        Semana: ${data.semana}\n
+        - Acomodador_1: _${data.acomodador_1}_
+        - Acomodador_2: _${data.acomodador_2}_
+        - Multimedia_1: _${data.multimedia_1}_
+        - Multimedia_2: _${data.multimedia_2}_
+        - Microfono: _${data.microfono}_
+        - Plataforma: _${data.plataforma}_
+        - Lector_L: _${data.lector_l}_
+        - Lector_A: _${data.lector_a}_
+        - Oracion_P: _${data.oracion_p}_
+        - Oracion_F: _${data.oracion_f}_
+        - Presidente: _${data.presidente}_`
     )}`;
 
     window.open((url),
-    "", "width=300, height=300");
+    "", "width=1000, height=700");
     console.log(data);
     }
 }

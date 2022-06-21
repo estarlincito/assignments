@@ -9,6 +9,10 @@
     border-radius: 10px;
 }
 
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+}
 .form{
     display: grid;
     grid-template-columns: auto;
@@ -18,26 +22,31 @@
 .form__label{
     font-weight: bold;
     text-align: left;
-    font-size: 20px;
-    margin: 10px;
+    font-size: 12px;
+    margin-left: 10px;
 }
 
 .form__input{
-    margin: 10px;
-    padding: 10px;
+    margin: 2px 10px 10px 10px;
+    padding: 5px;
     width: 200px;
     border-radius: 5px;
-    font-size: 15px;
     border: 1px solid #ccc;
+    font-weight: lighter;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
 }
 
 .form__button{
     margin:auto;
-    width: 200px;
+    width: 100px;
     padding: 10px;
     border-radius: 5px;
     background-color: black;
     border: 1px solid rgb(12, 12, 12);
     color: white;
-
+    cursor: pointer;
 }
