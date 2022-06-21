@@ -43,7 +43,7 @@ function sent(){
         presidente.value == ""){
         alert("Complete todos los campos");
     }else{
-        const url = `https://wa.me/send?text=${encodeURIComponent(`
+        const url = `https://wa.me/?text=${encodeURIComponent(`
         *Asignaciones Miércoles & Sábado*\n
         Semana: ${data.semana}\n
         - Acomodador_1: _${data.acomodador_1}_
