@@ -29,19 +29,19 @@ function sent(){
     }
 
     if(
-        semana.value == "" && 
-        oracion_p.value == "" && 
-        oracion_f.value == "" && 
-        acomodador_1.value == "" && 
-        acomodador_2.value == "" && 
-        multimedia_1.value == "" && 
-        multimedia_2.value == "" && 
-        microfono.value == "" && 
-        plataforma.value == "" && 
-        lector_l.value == "" && 
-        lector_a.value == "" && 
+        semana.value == "" || 
+        oracion_p.value == "" || 
+        oracion_f.value == "" || 
+        acomodador_1.value == "" || 
+        acomodador_2.value == "" || 
+        multimedia_1.value == "" || 
+        multimedia_2.value == "" || 
+        microfono.value == "" || 
+        plataforma.value == "" || 
+        lector_l.value == "" || 
+        lector_a.value == "" || 
         presidente.value == ""){
-        alert("Complete todos los campos");
+        swal('Complete todos los campos!!','','error')
     }else{
         const url = `https://wa.me/?text=${encodeURIComponent(`
         *Asignaciones Miércoles & Sábado*\n
@@ -61,6 +61,5 @@ function sent(){
 
     window.open((url),
     "", "width=1000, height=700");
-    console.log(data);
     }
 }
