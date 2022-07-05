@@ -52,11 +52,11 @@ function sent(){
         - Multimedia_2: _${data.multimedia_2}_
         - Microfono: _${data.microfono}_
         - Plataforma: _${data.plataforma}_
-        - Lector_L: _${data.lector_l}_
-        - Lector_A: _${data.lector_a}_
         - Oracion_P: _${data.oracion_p}_
-        - Oracion_F: _${data.oracion_f}_
-        - Presidente: _${data.presidente}_`
+        - Lector_L: _${data.lector_l}_
+        - Oracion_F: _${data.oracion_f}_\n
+        - Lector_A: _${data.lector_a}_
+        - Presidente_S: _${data.presidente}_`
     )}`;
 
     window.open((url),
